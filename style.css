@@ -259,7 +259,7 @@ html{
     #up h1 {
         font-size: 20vw;
         padding: 2vw 0vw;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     #down h1 {
@@ -267,7 +267,7 @@ html{
         font-size: 20vw;
         left: 3vw;
         top: 18vw;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     #down #web {
@@ -612,22 +612,25 @@ html{
     #svg{
         position: absolute;
         top: 6%;
-        left: 3%;
+        left: 0%;
+    }
+    #svg svg{
+        width: 10vh;
     }
     .o-ui-arrow path {
         stroke: rgba(255, 252, 252, 0.637);
-        stroke-width: 3%;
+        stroke-width: 5%;
     }
     #page3 h6 {
         margin: 44vw 0 0 7vw;
         line-height: 4vw;
-        font-size: 3vw;
+        font-size: 4vw;
         color: #b2b2b2be;
     }
     
     #page3 h3 {
         margin: 3vw 0 15vw 7vw;
-        font-size: 5vw;
+        font-size: 5.5vw;
         line-height: 6vw;
     }
     #lamba-line {
@@ -914,7 +917,7 @@ a>img {
 .skill-bich{
     width: 80%;
     font-size: 1.7vw;
-    font-family: serif;
+    font-family: sans-serif;
     color: #383838;
 }
 .skill-niche{
@@ -963,7 +966,7 @@ a>img {
         width: 9vw;
     }
     .skill-tir{
-        margin-right: 3vw;
+        margin-right: -3vw;
         margin-top: -5vw;
     }
     .skill-tir>.o-ui-arrow path {
@@ -989,6 +992,9 @@ a>img {
     }
     .row img{
         width: 5vw;
+    }
+    .skill-title{
+        margin-left: -5px;
     }
 }
 
