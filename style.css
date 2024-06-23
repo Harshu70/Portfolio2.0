@@ -1352,4 +1352,7 @@ a>img {
         height: 17vw;
         padding: 4.8vw;
     }
+    .c-scrollbar{
+        display: none;
+    }
 }
