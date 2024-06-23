@@ -259,6 +259,7 @@ html{
     #up h1 {
         font-size: 20vw;
         padding: 2vw 0vw;
+        font-weight: 600;
     }
 
     #down h1 {
@@ -266,6 +267,7 @@ html{
         font-size: 20vw;
         left: 3vw;
         top: 18vw;
+        font-weight: 600;
     }
 
     #down #web {
@@ -399,6 +401,7 @@ html{
 @media(max-width : 600px) {
     #page2{
         width: 100%;
+        height: 40vh;
     }
 
     #top,#niche {
@@ -407,7 +410,7 @@ html{
     }
     #content {
         position: absolute;
-        left: 0%;
+        left: -2%;
         top: 50%;
     }
     #strip {
@@ -487,17 +490,18 @@ html{
 
 @media(max-width : 600px){
     .carda {
-        border-radius: 4vw;
+        border-radius: 2vw;
     }
     .cnta img {
-        height: 32vw;
+        height: 36vw;
         aspect-ratio: 1 / 1.5;
         width: 100%;
-        border-radius: 2vh;
+        border-radius: 2vw;
     }
     .carda::after,
 .carda::before{
-    inset: -5px;
+    inset: -3px;
+    border-radius: 10px;
 }
     
     #content-right {
@@ -505,12 +509,13 @@ html{
     }
     #content-right h1 {
         text-align: start;
-        font-size: 5vw;
+        font-size: 5.4vw;
         font-weight: 600;
     }
     #content-right h5 {
-        font-size: 2.3vw;
-        text-align: start;
+        font-size: 2.7vw;
+        text-align: justify;
+        /* padding-right: 5px; */
         font-weight: 100;
         width: 110%;
         letter-spacing: .01vw;
@@ -770,6 +775,12 @@ a>img {
     top: -20%;
     margin-bottom: -15vw;
 }
+@media (max-width:600px){
+    .pro-info{
+        bottom: -5%;
+        left: -5%;
+    }
+}
 
 /* --------------cursor---------------- */
 
@@ -936,8 +947,8 @@ a>img {
 .box img:hover{
     transform: rotate(10deg);
 }
-#skill-border{
-    width: 98vw;
+#skill-border img{
+    width: 100%;
     position: absolute;
     transform: rotate(180deg);
     left: 0%;
@@ -1076,7 +1087,7 @@ a>img {
     
     .edu-cla {
         font-size: 12vw;
-        -webkit-text-stroke: 3px rgba(224, 222, 222, 0.671);
+        -webkit-text-stroke: 1px rgba(224, 222, 222, 0.671);
     }
     
     .edu-info {
