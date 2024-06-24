@@ -8,6 +8,14 @@
     font-family: 'arizo';
     src: url('font/Arizonia-Regular.woff');
 }
+@font-face{
+    font-family: 'futura';
+    src: url('font/Futura-Bold.woff');
+}
+@font-face{
+    font-family: 'gilroy';
+    src: url('font/Gilroy-Medium.woff');
+}
 
 *::selection {
     background-color: var(--font);
@@ -259,7 +267,6 @@ html{
     #up h1 {
         font-size: 20vw;
         padding: 2vw 0vw;
-        font-weight: 500;
     }
 
     #down h1 {
@@ -267,7 +274,6 @@ html{
         font-size: 20vw;
         left: 3vw;
         top: 18vw;
-        font-weight: 500;
     }
 
     #down #web {
