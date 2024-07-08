@@ -800,7 +800,7 @@ a>img {
     z-index: 99;
     pointer-events: none;
     opacity: 0;
-    transition: all .09s linear;
+    transition: all 0s linear;
 }
 
 .sab-pic {
