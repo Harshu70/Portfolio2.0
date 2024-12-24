@@ -19,43 +19,6 @@ function loco() {
 }
 loco();
 
-function contentWala() {
-    const root = document.documentElement;
-    const card = document.querySelector(".carda");
-    const timer = () => new Promise((res) => setTimeout(res, 40));
-    async function spin() {
-        let iq = 0;
-        while (true) {
-            root.style.setProperty("--angle", (iq += 6) + "deg");
-            await timer();
-            if (iq > 360) iq = 0;
-        }
-    }
-    spin();
-
-    function trans(event) {
-        const xx = event.clientX;
-        const yy = event.clientY;
-        const middleX = window.innerWidth / 2;
-        const middleY = window.innerHeight / 2;
-        const offsetX = ((xx - middleX) / middleX) * 30;
-        const offsetY = ((yy - middleY) / middleY) * 30;
-
-        root.style.setProperty("--rotx", -1 * offsetY + "deg");
-        root.style.setProperty("--roty", offsetX + "deg");
-    }
-    const pura = document.querySelector("#bich")
-    pura.addEventListener("mousemove", (e) => {
-        trans(e);
-        root.style.setProperty("--pers", "1000px");
-    })
-    pura.addEventListener("mouseout", () => {
-        root.style.setProperty("--rotx", "0deg");
-        root.style.setProperty("--roty", "0deg");
-        root.style.setProperty("--pers", "10000px");
-    })
-}
-contentWala();
 
 function upr_jane_wala_anime() {
     var asd = document.querySelectorAll(".uprjana")
@@ -235,7 +198,7 @@ function workHover() {
         curse2.style.left = (dets.x - 24) + "px";
         curse2.style.top = (dets.y - 26) + "px";
         curse2.style.opacity = 1;
-        work.style.backgroundColor = "#ff00005b";
+        work.style.backgroundColor = "#18bdef76";
         infoKaPpp.style.opacity = 1
     })
     elm2.addEventListener("mouseleave", function () {
@@ -292,13 +255,46 @@ function workHover() {
         work.style.backgroundColor = "#F2F2F2";
     })
 }
-const alrt = document.querySelector(".alertii")
 if(deviceWidth>600){
     workHover();
-    alrt.addEventListener("click", ()=>{
-        alert('Cant view due to copyright issue');
+}
+function contentWala() {
+    const root = document.documentElement;
+    const card = document.querySelector(".carda");
+    const timer = () => new Promise((res) => setTimeout(res, 40));
+    async function spin() {
+        let iq = 0;
+        while (true) {
+            root.style.setProperty("--angle", (iq += 6) + "deg");
+            await timer();
+            if (iq > 360) iq = 0;
+        }
+    }
+    spin();
+
+    function trans(event) {
+        const xx = event.clientX;
+        const yy = event.clientY;
+        const middleX = window.innerWidth / 2;
+        const middleY = window.innerHeight / 2;
+        const offsetX = ((xx - middleX) / middleX) * 30;
+        const offsetY = ((yy - middleY) / middleY) * 30;
+
+        root.style.setProperty("--rotx", -1 * offsetY + "deg");
+        root.style.setProperty("--roty", offsetX + "deg");
+    }
+    const pura = document.querySelector("#bich")
+    pura.addEventListener("mousemove", (e) => {
+        trans(e);
+        root.style.setProperty("--pers", "1000px");
+    })
+    pura.addEventListener("mouseout", () => {
+        root.style.setProperty("--rotx", "0deg");
+        root.style.setProperty("--roty", "0deg");
+        root.style.setProperty("--pers", "10000px");
     })
 }
+contentWala();
 
 function eduScroll() {
     var tt = gsap.timeline({
