@@ -180,7 +180,7 @@ function workHover() {
     elm.addEventListener("mousemove", function (dets) {
         curse.style.left = (dets.x - 24) + "px";
         curse.style.top = (dets.y - 26) + "px";
-        work.style.backgroundColor = "#8a8988df";
+        work.style.backgroundColor = "#F8CBAD76";
         curse.style.opacity = 1
         infoKaP.style.opacity = 1
     })
@@ -231,7 +231,7 @@ function workHover() {
         curse4.style.top = (dets.y - 26) + "px";
         curse4.style.opacity = 1
         infoKaP4.style.opacity = 1
-        work.style.backgroundColor = "#4B43358b"
+        work.style.backgroundColor = "#C4A5A3"
     })
     elm4.addEventListener("mouseleave", function () {
         curse4.style.opacity = 0
@@ -245,7 +245,7 @@ function workHover() {
     elm5.addEventListener("mousemove", function (dets) {
         curse5.style.left = (dets.x - 24) + "px";
         curse5.style.top = (dets.y - 26) + "px";
-        work.style.backgroundColor = "#C4A5A3";
+        work.style.backgroundColor = "#8a8988df";
         curse5.style.opacity = 1
         infoKaP5.style.opacity = 1
     })
